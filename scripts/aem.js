@@ -808,7 +808,7 @@ async function init() {
   sampleRUM('top');
 
   window.addEventListener('load', () => sampleRUM('load'));
-  
+
   ['error', 'unhandledrejection'].forEach((event) => {
     window.addEventListener(event, ({ reason, error }) => {
       const errData = { source: 'undefined error' };
