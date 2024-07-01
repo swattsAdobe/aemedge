@@ -12,17 +12,18 @@
 
 :root {
   /* colors */
-  --link-color: #035fe6;
-  --link-hover-color: #136ff6;
   --background-color: white;
-  --light-color: #eee;
-  --dark-color: #ccc;
-  --text-color: black;
+  --light-color: #e1e1e1;
+  --dark-color: #c6c6c6;
+  --text-color: #292929;
+  --link-color: #4565F2;
+  --link-hover-color: #2f4de1;
+
+  /* #3562ff */
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -64,8 +65,8 @@ body {
   margin: 0;
   font-family: var(--body-font-family);
   line-height: 1.6;
-  color: var(--text-color);
   background-color: var(--background-color);
+  color: var(--text-color);
   display: none;
 }
 
@@ -110,7 +111,6 @@ blockquote {
 
 code,
 pre {
-  font-family: var(--fixed-font-family);
   font-size: var(--body-font-size-s);
 }
 
@@ -154,8 +154,8 @@ button {
   font-style: normal;
   font-weight: 600;
   cursor: pointer;
-  color: var(--background-color);
   background-color: var(--link-color);
+  color: var(--background-color);
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
